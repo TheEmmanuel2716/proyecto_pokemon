@@ -15,8 +15,7 @@ pruebas de software del curso.
 
 - Node.js
 - Express
-- Almacenamiento en archivo JSON (sin necesidad de instalar una base de
-  datos externa, ideal para un entorno de aula)
+- Almacenamiento en archivo JSON
 - Jest + Supertest para pruebas automatizadas
 
 ## Estructura del proyecto
@@ -80,17 +79,17 @@ PORT=4000 pnpm start
 
 Todas las respuestas y peticiones usan formato **JSON**.
 
-| Metodo | Endpoint                  | Descripcion                                  |
-|--------|----------------------------|-----------------------------------------------|
-| GET    | `/`                         | Informacion basica de la API                  |
-| GET    | `/api/pokemons`             | Lista todos los pokemon                       |
-| GET    | `/api/pokemons?nombre=pika` | Filtra pokemon por nombre (busqueda parcial)  |
-| GET    | `/api/pokemons?limit=10&offset=0` | Pagina los resultados                   |
-| GET    | `/api/pokemons/:id`         | Obtiene un pokemon por id                     |
-| POST   | `/api/pokemons`             | Crea un nuevo pokemon                         |
-| PUT    | `/api/pokemons/:id`         | Actualiza un pokemon (total o parcial)        |
-| PATCH  | `/api/pokemons/:id`         | Actualiza un pokemon parcialmente             |
-| DELETE | `/api/pokemons/:id`         | Elimina un pokemon                            |
+| Metodo | Endpoint                          | Descripcion                                  |
+| ------ | --------------------------------- | -------------------------------------------- |
+| GET    | `/`                               | Informacion basica de la API                 |
+| GET    | `/api/pokemons`                   | Lista todos los pokemon                      |
+| GET    | `/api/pokemons?nombre=pika`       | Filtra pokemon por nombre (busqueda parcial) |
+| GET    | `/api/pokemons?limit=10&offset=0` | Pagina los resultados                        |
+| GET    | `/api/pokemons/:id`               | Obtiene un pokemon por id                    |
+| POST   | `/api/pokemons`                   | Crea un nuevo pokemon                        |
+| PUT    | `/api/pokemons/:id`               | Actualiza un pokemon (total o parcial)       |
+| PATCH  | `/api/pokemons/:id`               | Actualiza un pokemon parcialmente            |
+| DELETE | `/api/pokemons/:id`               | Elimina un pokemon                           |
 
 ### Estructura de un Pokemon
 
@@ -191,6 +190,6 @@ practicas de pruebas de software del curso.
 
 ## Integrantes del grupo
 
-- Nombre estudiante 1
-- Nombre estudiante 2
-- Nombre estudiante 3
+- Jhon Alexander Trujillo
+- Santiago Salazar
+- Emmanuel Steven Gonzalez
