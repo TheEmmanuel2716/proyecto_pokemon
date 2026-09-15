@@ -21,7 +21,7 @@ pruebas de software del curso.
 ## Estructura del proyecto
 
 ```
-pokemon-api/
+proyecto_pokemon/
 ├── src/
 │   ├── controllers/
 │   │   └── pokemonController.js   # Logica de cada endpoint
@@ -51,7 +51,7 @@ pokemon-api/
 ```bash
 # 1. Clonar el repositorio
 git clone <URL_DEL_REPOSITORIO>
-cd pokemon-api
+cd proyecto_pokemon
 
 # 2. Instalar dependencias
 pnpm install
