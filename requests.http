@@ -1,0 +1,64 @@
+### Info de la API
+GET http://localhost:3000/
+
+### Listar todos los pokemon
+GET http://localhost:3000/api/pokemons
+
+### Buscar por nombre
+GET http://localhost:3000/api/pokemons?nombre=char
+
+### Paginacion
+GET http://localhost:3000/api/pokemons?limit=10&offset=0
+
+### Obtener un pokemon por id (Bulbasaur)
+GET http://localhost:3000/api/pokemons/1
+
+### Obtener un pokemon inexistente (debe dar 404)
+GET http://localhost:3000/api/pokemons/9999
+
+### Crear un pokemon nuevo
+POST http://localhost:3000/api/pokemons
+Content-Type: application/json
+
+{
+  "nombre": "Mewtwo Clon",
+  "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+  "tipo": ["Psychic"],
+  "estadisticas": {
+    "ps": 106,
+    "ataque": 110,
+    "defensa": 90,
+    "ataqueEspecial": 154,
+    "defensaEspecial": 90,
+    "velocidad": 130
+  }
+}
+
+### Actualizar completamente un pokemon (reemplaza el 152 creado arriba)
+PUT http://localhost:3000/api/pokemons/152
+Content-Type: application/json
+
+{
+  "nombre": "Mewtwo Clon Actualizado",
+  "estadisticas": {
+    "ps": 120,
+    "ataque": 120,
+    "defensa": 100,
+    "ataqueEspecial": 160,
+    "defensaEspecial": 100,
+    "velocidad": 140
+  }
+}
+
+### Actualizar parcialmente (solo velocidad)
+PATCH http://localhost:3000/api/pokemons/152
+Content-Type: application/json
+
+{
+  "estadisticas": {
+    "velocidad": 999
+  }
+}
+
+### Eliminar un pokemon
+DELETE http://localhost:3000/api/pokemons/152

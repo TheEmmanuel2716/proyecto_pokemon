@@ -1,0 +1,30 @@
+{
+  "name": "proyecto_pokemon",
+  "version": "1.0.0",
+  "description": "API REST CRUD sobre los 151 Pokemon de la 1ra generacion - Proyecto de aula",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "pokemon",
+    "api",
+    "rest",
+    "express",
+    "crud"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}

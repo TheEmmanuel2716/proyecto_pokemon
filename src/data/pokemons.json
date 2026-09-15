@@ -1,0 +1,2485 @@
+[
+  {
+    "id": 1,
+    "nombre": "Bulbasaur",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 49,
+      "defensa": 49,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 65,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Ivysaur",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 62,
+      "defensa": 63,
+      "ataqueEspecial": 80,
+      "defensaEspecial": 80,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Venusaur",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 82,
+      "defensa": 83,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 100,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Charmander",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 39,
+      "ataque": 52,
+      "defensa": 43,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 50,
+      "velocidad": 65
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Charmeleon",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 58,
+      "ataque": 64,
+      "defensa": 58,
+      "ataqueEspecial": 80,
+      "defensaEspecial": 65,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Charizard",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    "tipo": [
+      "Fire",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 78,
+      "ataque": 84,
+      "defensa": 78,
+      "ataqueEspecial": 109,
+      "defensaEspecial": 85,
+      "velocidad": 100
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Squirtle",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 44,
+      "ataque": 48,
+      "defensa": 65,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 64,
+      "velocidad": 43
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Wartortle",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 59,
+      "ataque": 63,
+      "defensa": 80,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 80,
+      "velocidad": 58
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Blastoise",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 79,
+      "ataque": 83,
+      "defensa": 100,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 105,
+      "velocidad": 78
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Caterpie",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+    "tipo": [
+      "Bug"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 30,
+      "defensa": 35,
+      "ataqueEspecial": 20,
+      "defensaEspecial": 20,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Metapod",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+    "tipo": [
+      "Bug"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 20,
+      "defensa": 55,
+      "ataqueEspecial": 25,
+      "defensaEspecial": 25,
+      "velocidad": 30
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Butterfree",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+    "tipo": [
+      "Bug",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 45,
+      "defensa": 50,
+      "ataqueEspecial": 90,
+      "defensaEspecial": 80,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Weedle",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png",
+    "tipo": [
+      "Bug",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 35,
+      "defensa": 30,
+      "ataqueEspecial": 20,
+      "defensaEspecial": 20,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Kakuna",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png",
+    "tipo": [
+      "Bug",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 25,
+      "defensa": 50,
+      "ataqueEspecial": 25,
+      "defensaEspecial": 25,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 15,
+    "nombre": "Beedrill",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+    "tipo": [
+      "Bug",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 90,
+      "defensa": 40,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 80,
+      "velocidad": 75
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Pidgey",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 45,
+      "defensa": 40,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 35,
+      "velocidad": 56
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Pidgeotto",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 63,
+      "ataque": 60,
+      "defensa": 55,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 50,
+      "velocidad": 71
+    }
+  },
+  {
+    "id": 18,
+    "nombre": "Pidgeot",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 83,
+      "ataque": 80,
+      "defensa": 75,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 70,
+      "velocidad": 101
+    }
+  },
+  {
+    "id": 19,
+    "nombre": "Rattata",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 56,
+      "defensa": 35,
+      "ataqueEspecial": 25,
+      "defensaEspecial": 35,
+      "velocidad": 72
+    }
+  },
+  {
+    "id": 20,
+    "nombre": "Raticate",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 81,
+      "defensa": 60,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 70,
+      "velocidad": 97
+    }
+  },
+  {
+    "id": 21,
+    "nombre": "Spearow",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 60,
+      "defensa": 30,
+      "ataqueEspecial": 31,
+      "defensaEspecial": 31,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 22,
+    "nombre": "Fearow",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 90,
+      "defensa": 65,
+      "ataqueEspecial": 61,
+      "defensaEspecial": 61,
+      "velocidad": 100
+    }
+  },
+  {
+    "id": 23,
+    "nombre": "Ekans",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 60,
+      "defensa": 44,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 54,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 24,
+    "nombre": "Arbok",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 95,
+      "defensa": 69,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 79,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 25,
+    "nombre": "Pikachu",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "tipo": [
+      "Electric"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 55,
+      "defensa": 40,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 50,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 26,
+    "nombre": "Raichu",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+    "tipo": [
+      "Electric"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 90,
+      "defensa": 55,
+      "ataqueEspecial": 90,
+      "defensaEspecial": 80,
+      "velocidad": 110
+    }
+  },
+  {
+    "id": 27,
+    "nombre": "Sandshrew",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png",
+    "tipo": [
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 75,
+      "defensa": 85,
+      "ataqueEspecial": 20,
+      "defensaEspecial": 30,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 28,
+    "nombre": "Sandslash",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png",
+    "tipo": [
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 75,
+      "ataque": 100,
+      "defensa": 110,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 55,
+      "velocidad": 65
+    }
+  },
+  {
+    "id": 29,
+    "nombre": "Nidoran♀",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 47,
+      "defensa": 52,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 40,
+      "velocidad": 41
+    }
+  },
+  {
+    "id": 30,
+    "nombre": "Nidorina",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 62,
+      "defensa": 67,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 55,
+      "velocidad": 56
+    }
+  },
+  {
+    "id": 31,
+    "nombre": "Nidoqueen",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
+    "tipo": [
+      "Poison",
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 92,
+      "defensa": 87,
+      "ataqueEspecial": 75,
+      "defensaEspecial": 85,
+      "velocidad": 76
+    }
+  },
+  {
+    "id": 32,
+    "nombre": "Nidoran♂",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 46,
+      "ataque": 57,
+      "defensa": 40,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 40,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 33,
+    "nombre": "Nidorino",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 61,
+      "ataque": 72,
+      "defensa": 57,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 55,
+      "velocidad": 65
+    }
+  },
+  {
+    "id": 34,
+    "nombre": "Nidoking",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png",
+    "tipo": [
+      "Poison",
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 81,
+      "ataque": 102,
+      "defensa": 77,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 75,
+      "velocidad": 85
+    }
+  },
+  {
+    "id": 35,
+    "nombre": "Clefairy",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png",
+    "tipo": [
+      "Fairy"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 45,
+      "defensa": 48,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 65,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 36,
+    "nombre": "Clefable",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png",
+    "tipo": [
+      "Fairy"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 70,
+      "defensa": 73,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 90,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 37,
+    "nombre": "Vulpix",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 38,
+      "ataque": 41,
+      "defensa": 40,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 65,
+      "velocidad": 65
+    }
+  },
+  {
+    "id": 38,
+    "nombre": "Ninetales",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 73,
+      "ataque": 76,
+      "defensa": 75,
+      "ataqueEspecial": 81,
+      "defensaEspecial": 100,
+      "velocidad": 100
+    }
+  },
+  {
+    "id": 39,
+    "nombre": "Jigglypuff",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+    "tipo": [
+      "Normal",
+      "Fairy"
+    ],
+    "estadisticas": {
+      "ps": 115,
+      "ataque": 45,
+      "defensa": 20,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 25,
+      "velocidad": 20
+    }
+  },
+  {
+    "id": 40,
+    "nombre": "Wigglytuff",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+    "tipo": [
+      "Normal",
+      "Fairy"
+    ],
+    "estadisticas": {
+      "ps": 140,
+      "ataque": 70,
+      "defensa": 45,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 50,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 41,
+    "nombre": "Zubat",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png",
+    "tipo": [
+      "Poison",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 45,
+      "defensa": 35,
+      "ataqueEspecial": 30,
+      "defensaEspecial": 40,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 42,
+    "nombre": "Golbat",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+    "tipo": [
+      "Poison",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 75,
+      "ataque": 80,
+      "defensa": 70,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 75,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 43,
+    "nombre": "Oddish",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 50,
+      "defensa": 55,
+      "ataqueEspecial": 75,
+      "defensaEspecial": 65,
+      "velocidad": 30
+    }
+  },
+  {
+    "id": 44,
+    "nombre": "Gloom",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 65,
+      "defensa": 70,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 75,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 45,
+    "nombre": "Vileplume",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 75,
+      "ataque": 80,
+      "defensa": 85,
+      "ataqueEspecial": 110,
+      "defensaEspecial": 90,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 46,
+    "nombre": "Paras",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png",
+    "tipo": [
+      "Bug",
+      "Grass"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 70,
+      "defensa": 55,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 55,
+      "velocidad": 25
+    }
+  },
+  {
+    "id": 47,
+    "nombre": "Parasect",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png",
+    "tipo": [
+      "Bug",
+      "Grass"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 95,
+      "defensa": 80,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 80,
+      "velocidad": 30
+    }
+  },
+  {
+    "id": 48,
+    "nombre": "Venonat",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png",
+    "tipo": [
+      "Bug",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 55,
+      "defensa": 50,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 55,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 49,
+    "nombre": "Venomoth",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png",
+    "tipo": [
+      "Bug",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 65,
+      "defensa": 60,
+      "ataqueEspecial": 90,
+      "defensaEspecial": 75,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 50,
+    "nombre": "Diglett",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png",
+    "tipo": [
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 10,
+      "ataque": 55,
+      "defensa": 25,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 45,
+      "velocidad": 95
+    }
+  },
+  {
+    "id": 51,
+    "nombre": "Dugtrio",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png",
+    "tipo": [
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 100,
+      "defensa": 50,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 70,
+      "velocidad": 120
+    }
+  },
+  {
+    "id": 52,
+    "nombre": "Meowth",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 45,
+      "defensa": 35,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 40,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 53,
+    "nombre": "Persian",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 70,
+      "defensa": 60,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 65,
+      "velocidad": 115
+    }
+  },
+  {
+    "id": 54,
+    "nombre": "Psyduck",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 52,
+      "defensa": 48,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 50,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 55,
+    "nombre": "Golduck",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 82,
+      "defensa": 78,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 80,
+      "velocidad": 85
+    }
+  },
+  {
+    "id": 56,
+    "nombre": "Mankey",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 80,
+      "defensa": 35,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 45,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 57,
+    "nombre": "Primeape",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 105,
+      "defensa": 60,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 70,
+      "velocidad": 95
+    }
+  },
+  {
+    "id": 58,
+    "nombre": "Growlithe",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 70,
+      "defensa": 45,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 50,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 59,
+    "nombre": "Arcanine",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 110,
+      "defensa": 80,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 80,
+      "velocidad": 95
+    }
+  },
+  {
+    "id": 60,
+    "nombre": "Poliwag",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 50,
+      "defensa": 40,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 40,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 61,
+    "nombre": "Poliwhirl",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 65,
+      "defensa": 65,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 50,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 62,
+    "nombre": "Poliwrath",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png",
+    "tipo": [
+      "Water",
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 95,
+      "defensa": 95,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 90,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 63,
+    "nombre": "Abra",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 25,
+      "ataque": 20,
+      "defensa": 15,
+      "ataqueEspecial": 105,
+      "defensaEspecial": 55,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 64,
+    "nombre": "Kadabra",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 35,
+      "defensa": 30,
+      "ataqueEspecial": 120,
+      "defensaEspecial": 70,
+      "velocidad": 105
+    }
+  },
+  {
+    "id": 65,
+    "nombre": "Alakazam",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 50,
+      "defensa": 45,
+      "ataqueEspecial": 135,
+      "defensaEspecial": 95,
+      "velocidad": 120
+    }
+  },
+  {
+    "id": 66,
+    "nombre": "Machop",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 80,
+      "defensa": 50,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 35,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 67,
+    "nombre": "Machoke",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 100,
+      "defensa": 70,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 60,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 68,
+    "nombre": "Machamp",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 130,
+      "defensa": 80,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 85,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 69,
+    "nombre": "Bellsprout",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 75,
+      "defensa": 35,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 30,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 70,
+    "nombre": "Weepinbell",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 90,
+      "defensa": 50,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 45,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 71,
+    "nombre": "Victreebel",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png",
+    "tipo": [
+      "Grass",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 105,
+      "defensa": 65,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 70,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 72,
+    "nombre": "Tentacool",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png",
+    "tipo": [
+      "Water",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 40,
+      "defensa": 35,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 100,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 73,
+    "nombre": "Tentacruel",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png",
+    "tipo": [
+      "Water",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 70,
+      "defensa": 65,
+      "ataqueEspecial": 80,
+      "defensaEspecial": 120,
+      "velocidad": 100
+    }
+  },
+  {
+    "id": 74,
+    "nombre": "Geodude",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+    "tipo": [
+      "Rock",
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 80,
+      "defensa": 100,
+      "ataqueEspecial": 30,
+      "defensaEspecial": 30,
+      "velocidad": 20
+    }
+  },
+  {
+    "id": 75,
+    "nombre": "Graveler",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+    "tipo": [
+      "Rock",
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 95,
+      "defensa": 115,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 45,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 76,
+    "nombre": "Golem",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png",
+    "tipo": [
+      "Rock",
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 120,
+      "defensa": 130,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 65,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 77,
+    "nombre": "Ponyta",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 85,
+      "defensa": 55,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 65,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 78,
+    "nombre": "Rapidash",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 100,
+      "defensa": 70,
+      "ataqueEspecial": 80,
+      "defensaEspecial": 80,
+      "velocidad": 105
+    }
+  },
+  {
+    "id": 79,
+    "nombre": "Slowpoke",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png",
+    "tipo": [
+      "Water",
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 65,
+      "defensa": 65,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 40,
+      "velocidad": 15
+    }
+  },
+  {
+    "id": 80,
+    "nombre": "Slowbro",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
+    "tipo": [
+      "Water",
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 75,
+      "defensa": 110,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 80,
+      "velocidad": 30
+    }
+  },
+  {
+    "id": 81,
+    "nombre": "Magnemite",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+    "tipo": [
+      "Electric",
+      "Steel"
+    ],
+    "estadisticas": {
+      "ps": 25,
+      "ataque": 35,
+      "defensa": 70,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 55,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 82,
+    "nombre": "Magneton",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png",
+    "tipo": [
+      "Electric",
+      "Steel"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 60,
+      "defensa": 95,
+      "ataqueEspecial": 120,
+      "defensaEspecial": 70,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 83,
+    "nombre": "Farfetch'd",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 52,
+      "ataque": 90,
+      "defensa": 55,
+      "ataqueEspecial": 58,
+      "defensaEspecial": 62,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 84,
+    "nombre": "Doduo",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 85,
+      "defensa": 45,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 35,
+      "velocidad": 75
+    }
+  },
+  {
+    "id": 85,
+    "nombre": "Dodrio",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+    "tipo": [
+      "Normal",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 110,
+      "defensa": 70,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 60,
+      "velocidad": 110
+    }
+  },
+  {
+    "id": 86,
+    "nombre": "Seel",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 45,
+      "defensa": 55,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 70,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 87,
+    "nombre": "Dewgong",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png",
+    "tipo": [
+      "Water",
+      "Ice"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 70,
+      "defensa": 80,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 95,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 88,
+    "nombre": "Grimer",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 80,
+      "defensa": 50,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 50,
+      "velocidad": 25
+    }
+  },
+  {
+    "id": 89,
+    "nombre": "Muk",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 105,
+      "ataque": 105,
+      "defensa": 75,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 100,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 90,
+    "nombre": "Shellder",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 65,
+      "defensa": 100,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 25,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 91,
+    "nombre": "Cloyster",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png",
+    "tipo": [
+      "Water",
+      "Ice"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 95,
+      "defensa": 180,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 45,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 92,
+    "nombre": "Gastly",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+    "tipo": [
+      "Ghost",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 35,
+      "defensa": 30,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 35,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 93,
+    "nombre": "Haunter",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+    "tipo": [
+      "Ghost",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 50,
+      "defensa": 45,
+      "ataqueEspecial": 115,
+      "defensaEspecial": 55,
+      "velocidad": 95
+    }
+  },
+  {
+    "id": 94,
+    "nombre": "Gengar",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+    "tipo": [
+      "Ghost",
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 65,
+      "defensa": 60,
+      "ataqueEspecial": 130,
+      "defensaEspecial": 75,
+      "velocidad": 110
+    }
+  },
+  {
+    "id": 95,
+    "nombre": "Onix",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
+    "tipo": [
+      "Rock",
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 45,
+      "defensa": 160,
+      "ataqueEspecial": 30,
+      "defensaEspecial": 45,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 96,
+    "nombre": "Drowzee",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 48,
+      "defensa": 45,
+      "ataqueEspecial": 43,
+      "defensaEspecial": 90,
+      "velocidad": 42
+    }
+  },
+  {
+    "id": 97,
+    "nombre": "Hypno",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 85,
+      "ataque": 73,
+      "defensa": 70,
+      "ataqueEspecial": 73,
+      "defensaEspecial": 115,
+      "velocidad": 67
+    }
+  },
+  {
+    "id": 98,
+    "nombre": "Krabby",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 105,
+      "defensa": 90,
+      "ataqueEspecial": 25,
+      "defensaEspecial": 25,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 99,
+    "nombre": "Kingler",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 130,
+      "defensa": 115,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 50,
+      "velocidad": 75
+    }
+  },
+  {
+    "id": 100,
+    "nombre": "Voltorb",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+    "tipo": [
+      "Electric"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 30,
+      "defensa": 50,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 55,
+      "velocidad": 100
+    }
+  },
+  {
+    "id": 101,
+    "nombre": "Electrode",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png",
+    "tipo": [
+      "Electric"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 50,
+      "defensa": 70,
+      "ataqueEspecial": 80,
+      "defensaEspecial": 80,
+      "velocidad": 150
+    }
+  },
+  {
+    "id": 102,
+    "nombre": "Exeggcute",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png",
+    "tipo": [
+      "Grass",
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 40,
+      "defensa": 80,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 45,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 103,
+    "nombre": "Exeggutor",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png",
+    "tipo": [
+      "Grass",
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 95,
+      "defensa": 85,
+      "ataqueEspecial": 125,
+      "defensaEspecial": 75,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 104,
+    "nombre": "Cubone",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png",
+    "tipo": [
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 50,
+      "defensa": 95,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 50,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 105,
+    "nombre": "Marowak",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
+    "tipo": [
+      "Ground"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 80,
+      "defensa": 110,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 80,
+      "velocidad": 45
+    }
+  },
+  {
+    "id": 106,
+    "nombre": "Hitmonlee",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 120,
+      "defensa": 53,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 110,
+      "velocidad": 87
+    }
+  },
+  {
+    "id": 107,
+    "nombre": "Hitmonchan",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png",
+    "tipo": [
+      "Fighting"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 105,
+      "defensa": 79,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 110,
+      "velocidad": 76
+    }
+  },
+  {
+    "id": 108,
+    "nombre": "Lickitung",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 55,
+      "defensa": 75,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 75,
+      "velocidad": 30
+    }
+  },
+  {
+    "id": 109,
+    "nombre": "Koffing",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 65,
+      "defensa": 95,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 45,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 110,
+    "nombre": "Weezing",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png",
+    "tipo": [
+      "Poison"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 90,
+      "defensa": 120,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 70,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 111,
+    "nombre": "Rhyhorn",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+    "tipo": [
+      "Ground",
+      "Rock"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 85,
+      "defensa": 95,
+      "ataqueEspecial": 30,
+      "defensaEspecial": 30,
+      "velocidad": 25
+    }
+  },
+  {
+    "id": 112,
+    "nombre": "Rhydon",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png",
+    "tipo": [
+      "Ground",
+      "Rock"
+    ],
+    "estadisticas": {
+      "ps": 105,
+      "ataque": 130,
+      "defensa": 120,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 45,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 113,
+    "nombre": "Chansey",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 250,
+      "ataque": 5,
+      "defensa": 5,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 105,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 114,
+    "nombre": "Tangela",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png",
+    "tipo": [
+      "Grass"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 55,
+      "defensa": 115,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 40,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 115,
+    "nombre": "Kangaskhan",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 105,
+      "ataque": 95,
+      "defensa": 80,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 80,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 116,
+    "nombre": "Horsea",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 40,
+      "defensa": 70,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 25,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 117,
+    "nombre": "Seadra",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 65,
+      "defensa": 95,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 45,
+      "velocidad": 85
+    }
+  },
+  {
+    "id": 118,
+    "nombre": "Goldeen",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 67,
+      "defensa": 60,
+      "ataqueEspecial": 35,
+      "defensaEspecial": 50,
+      "velocidad": 63
+    }
+  },
+  {
+    "id": 119,
+    "nombre": "Seaking",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 92,
+      "defensa": 65,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 80,
+      "velocidad": 68
+    }
+  },
+  {
+    "id": 120,
+    "nombre": "Staryu",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 45,
+      "defensa": 55,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 55,
+      "velocidad": 85
+    }
+  },
+  {
+    "id": 121,
+    "nombre": "Starmie",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+    "tipo": [
+      "Water",
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 75,
+      "defensa": 85,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 85,
+      "velocidad": 115
+    }
+  },
+  {
+    "id": 122,
+    "nombre": "Mr. Mime",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png",
+    "tipo": [
+      "Psychic",
+      "Fairy"
+    ],
+    "estadisticas": {
+      "ps": 40,
+      "ataque": 45,
+      "defensa": 65,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 120,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 123,
+    "nombre": "Scyther",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
+    "tipo": [
+      "Bug",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 110,
+      "defensa": 80,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 80,
+      "velocidad": 105
+    }
+  },
+  {
+    "id": 124,
+    "nombre": "Jynx",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+    "tipo": [
+      "Ice",
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 50,
+      "defensa": 35,
+      "ataqueEspecial": 115,
+      "defensaEspecial": 95,
+      "velocidad": 95
+    }
+  },
+  {
+    "id": 125,
+    "nombre": "Electabuzz",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png",
+    "tipo": [
+      "Electric"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 83,
+      "defensa": 57,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 85,
+      "velocidad": 105
+    }
+  },
+  {
+    "id": 126,
+    "nombre": "Magmar",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 95,
+      "defensa": 57,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 85,
+      "velocidad": 93
+    }
+  },
+  {
+    "id": 127,
+    "nombre": "Pinsir",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+    "tipo": [
+      "Bug"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 125,
+      "defensa": 100,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 70,
+      "velocidad": 85
+    }
+  },
+  {
+    "id": 128,
+    "nombre": "Tauros",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 75,
+      "ataque": 100,
+      "defensa": 95,
+      "ataqueEspecial": 40,
+      "defensaEspecial": 70,
+      "velocidad": 110
+    }
+  },
+  {
+    "id": 129,
+    "nombre": "Magikarp",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 20,
+      "ataque": 10,
+      "defensa": 55,
+      "ataqueEspecial": 15,
+      "defensaEspecial": 20,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 130,
+    "nombre": "Gyarados",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+    "tipo": [
+      "Water",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 125,
+      "defensa": 79,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 100,
+      "velocidad": 81
+    }
+  },
+  {
+    "id": 131,
+    "nombre": "Lapras",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png",
+    "tipo": [
+      "Water",
+      "Ice"
+    ],
+    "estadisticas": {
+      "ps": 130,
+      "ataque": 85,
+      "defensa": 80,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 95,
+      "velocidad": 60
+    }
+  },
+  {
+    "id": 132,
+    "nombre": "Ditto",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 48,
+      "ataque": 48,
+      "defensa": 48,
+      "ataqueEspecial": 48,
+      "defensaEspecial": 48,
+      "velocidad": 48
+    }
+  },
+  {
+    "id": 133,
+    "nombre": "Eevee",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 55,
+      "defensa": 50,
+      "ataqueEspecial": 45,
+      "defensaEspecial": 65,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 134,
+    "nombre": "Vaporeon",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+    "tipo": [
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 130,
+      "ataque": 65,
+      "defensa": 60,
+      "ataqueEspecial": 110,
+      "defensaEspecial": 95,
+      "velocidad": 65
+    }
+  },
+  {
+    "id": 135,
+    "nombre": "Jolteon",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+    "tipo": [
+      "Electric"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 65,
+      "defensa": 60,
+      "ataqueEspecial": 110,
+      "defensaEspecial": 95,
+      "velocidad": 130
+    }
+  },
+  {
+    "id": 136,
+    "nombre": "Flareon",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+    "tipo": [
+      "Fire"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 130,
+      "defensa": 60,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 110,
+      "velocidad": 65
+    }
+  },
+  {
+    "id": 137,
+    "nombre": "Porygon",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 65,
+      "ataque": 60,
+      "defensa": 70,
+      "ataqueEspecial": 85,
+      "defensaEspecial": 75,
+      "velocidad": 40
+    }
+  },
+  {
+    "id": 138,
+    "nombre": "Omanyte",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png",
+    "tipo": [
+      "Rock",
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 40,
+      "defensa": 100,
+      "ataqueEspecial": 90,
+      "defensaEspecial": 55,
+      "velocidad": 35
+    }
+  },
+  {
+    "id": 139,
+    "nombre": "Omastar",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png",
+    "tipo": [
+      "Rock",
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 60,
+      "defensa": 125,
+      "ataqueEspecial": 115,
+      "defensaEspecial": 70,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 140,
+    "nombre": "Kabuto",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png",
+    "tipo": [
+      "Rock",
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 30,
+      "ataque": 80,
+      "defensa": 90,
+      "ataqueEspecial": 55,
+      "defensaEspecial": 45,
+      "velocidad": 55
+    }
+  },
+  {
+    "id": 141,
+    "nombre": "Kabutops",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
+    "tipo": [
+      "Rock",
+      "Water"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 115,
+      "defensa": 105,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 70,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 142,
+    "nombre": "Aerodactyl",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+    "tipo": [
+      "Rock",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 105,
+      "defensa": 65,
+      "ataqueEspecial": 60,
+      "defensaEspecial": 75,
+      "velocidad": 130
+    }
+  },
+  {
+    "id": 143,
+    "nombre": "Snorlax",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+    "tipo": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 160,
+      "ataque": 110,
+      "defensa": 65,
+      "ataqueEspecial": 65,
+      "defensaEspecial": 110,
+      "velocidad": 30
+    }
+  },
+  {
+    "id": 144,
+    "nombre": "Articuno",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+    "tipo": [
+      "Ice",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 85,
+      "defensa": 100,
+      "ataqueEspecial": 95,
+      "defensaEspecial": 125,
+      "velocidad": 85
+    }
+  },
+  {
+    "id": 145,
+    "nombre": "Zapdos",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+    "tipo": [
+      "Electric",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 90,
+      "defensa": 85,
+      "ataqueEspecial": 125,
+      "defensaEspecial": 90,
+      "velocidad": 100
+    }
+  },
+  {
+    "id": 146,
+    "nombre": "Moltres",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+    "tipo": [
+      "Fire",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 100,
+      "defensa": 90,
+      "ataqueEspecial": 125,
+      "defensaEspecial": 85,
+      "velocidad": 90
+    }
+  },
+  {
+    "id": 147,
+    "nombre": "Dratini",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png",
+    "tipo": [
+      "Dragon"
+    ],
+    "estadisticas": {
+      "ps": 41,
+      "ataque": 64,
+      "defensa": 45,
+      "ataqueEspecial": 50,
+      "defensaEspecial": 50,
+      "velocidad": 50
+    }
+  },
+  {
+    "id": 148,
+    "nombre": "Dragonair",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png",
+    "tipo": [
+      "Dragon"
+    ],
+    "estadisticas": {
+      "ps": 61,
+      "ataque": 84,
+      "defensa": 65,
+      "ataqueEspecial": 70,
+      "defensaEspecial": 70,
+      "velocidad": 70
+    }
+  },
+  {
+    "id": 149,
+    "nombre": "Dragonite",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+    "tipo": [
+      "Dragon",
+      "Flying"
+    ],
+    "estadisticas": {
+      "ps": 91,
+      "ataque": 134,
+      "defensa": 95,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 100,
+      "velocidad": 80
+    }
+  },
+  {
+    "id": 150,
+    "nombre": "Mewtwo",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 106,
+      "ataque": 110,
+      "defensa": 90,
+      "ataqueEspecial": 154,
+      "defensaEspecial": 90,
+      "velocidad": 130
+    }
+  },
+  {
+    "id": 151,
+    "nombre": "Mew",
+    "foto": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    "tipo": [
+      "Psychic"
+    ],
+    "estadisticas": {
+      "ps": 100,
+      "ataque": 100,
+      "defensa": 100,
+      "ataqueEspecial": 100,
+      "defensaEspecial": 100,
+      "velocidad": 100
+    }
+  }
+]

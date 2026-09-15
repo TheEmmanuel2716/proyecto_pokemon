@@ -1,0 +1,10 @@
+node_modules/
+npm-debug.log
+.env
+coverage/
+.DS_Store
+
+# --- pnpm específico ---
+.pnpm-store/
+vnode_modules/
+.pnpm-debug.log*
