@@ -1,3 +1,33 @@
+### Iniciar duelo con Charmander y Squirtle
+# @name iniciarCombate
+POST http://localhost:3000/api/combates
+Content-Type: application/json
+
+{
+  "pokemonIds": [4, 7]
+}
+
+### Consultar el estado y los movimientos disponibles
+GET http://localhost:3000/api/combates/{{iniciarCombate.response.body.$.data.id}}
+
+### Primer turno de Charmander
+POST http://localhost:3000/api/combates/{{iniciarCombate.response.body.$.data.id}}/acciones
+Content-Type: application/json
+
+{
+  "movimientoId": "ascuas",
+  "turno": 1
+}
+
+### Segundo turno de Squirtle
+POST http://localhost:3000/api/combates/{{iniciarCombate.response.body.$.data.id}}/acciones
+Content-Type: application/json
+
+{
+  "movimientoId": "pistola-agua",
+  "turno": 2
+}
+
 ### Info de la API
 GET http://localhost:3000/
 
