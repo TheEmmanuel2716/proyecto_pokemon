@@ -20,6 +20,12 @@ describe('API de combates', () => {
     return api.post('/api/combates').send({ pokemonIds });
   }
 
+  test('sirve la arena y sus recursos desde el mismo servidor', async () => {
+    await api.get('/combate/').expect(200).expect('Content-Type', /html/).expect(/Arena de combate/);
+    await api.get('/combate/arena.css').expect(200).expect('Content-Type', /css/);
+    await api.get('/combate/arena.js').expect(200).expect('Content-Type', /javascript/);
+  });
+
   test('crea un duelo a partir de dos Pokémon del catálogo y permite consultarlo', async () => {
     const creacion = await iniciar([4, 7]).expect(201);
     const estado = creacion.body.data;
