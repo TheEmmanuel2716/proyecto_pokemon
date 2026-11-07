@@ -2,6 +2,7 @@ const { randomUUID } = require('node:crypto');
 const express = require('express');
 const pokemonRepository = require('../data/pokemonRepository');
 const { prepararParticipante } = require('../combate/participantes');
+const { primerJugador } = require('../combate/motor');
 
 const router = express.Router();
 const combates = new Map();
@@ -35,14 +36,12 @@ router.post('/', (req, res) => {
     participantes.push(participante);
   }
 
-  const diferencia = participantes[0].estadisticas.velocidad - participantes[1].estadisticas.velocidad;
-  const jugadorActivo = diferencia === 0 ? (Math.random() < 0.5 ? 1 : 2) : (diferencia > 0 ? 1 : 2);
   const combate = {
     id: randomUUID(),
     estado: 'en_curso',
     turno: 1,
     ronda: 1,
-    jugadorActivo,
+    jugadorActivo: primerJugador(participantes),
     participantes,
     historial: [],
     ganador: null
