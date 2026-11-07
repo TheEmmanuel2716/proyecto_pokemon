@@ -3,11 +3,13 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 const pokemonRoutes = require('./routes/pokemonRoutes');
+const combateRoutes = require('./routes/combateRoutes');
 
 const app = express();
 
 app.use(cors());
 app.use(morgan('dev'));
+app.use('/api/combates', combateRoutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
