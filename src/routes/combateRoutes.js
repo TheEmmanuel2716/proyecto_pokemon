@@ -2,7 +2,7 @@ const { randomUUID } = require('node:crypto');
 const express = require('express');
 const pokemonRepository = require('../data/pokemonRepository');
 const { prepararParticipante } = require('../combate/participantes');
-const { primerJugador } = require('../combate/motor');
+const { primerJugador, resolverAccion } = require('../combate/motor');
 
 const router = express.Router();
 const combates = new Map();
@@ -54,6 +54,34 @@ router.get('/:id', (req, res) => {
   const combate = combates.get(req.params.id);
   if (!combate) return res.status(404).json({ mensaje: 'No se encontró el combate.' });
   return res.json({ data: combate });
+});
+
+router.post('/:id/acciones', (req, res) => {
+  const datos = req.body ?? {};
+  const { movimientoId, turno } = datos;
+  if (Object.keys(datos).length !== 2 || typeof movimientoId !== 'string' || !movimientoId.trim() ||
+      !Number.isSafeInteger(turno) || turno < 1) {
+    return res.status(400).json({ mensaje: 'Envía únicamente un movimientoId y un número de turno válido.' });
+  }
+
+  const combate = combates.get(req.params.id);
+  if (!combate) return res.status(404).json({ mensaje: 'No se encontró el combate.' });
+  if (combate.estado === 'finalizado') {
+    return res.status(409).json({ mensaje: 'El combate ya finalizó.' });
+  }
+  if (turno !== combate.turno) {
+    return res.status(409).json({ mensaje: 'El número de turno ya no coincide. Consulta el estado actual.' });
+  }
+
+  const atacante = combate.participantes[combate.jugadorActivo - 1];
+  const movimiento = atacante.movimientos.find(({ id }) => id === movimientoId);
+  if (!movimiento) {
+    return res.status(422).json({ mensaje: 'El movimiento no está disponible para el Pokémon del turno.' });
+  }
+
+  const actualizado = resolverAccion(combate, movimiento);
+  combates.set(actualizado.id, actualizado);
+  return res.json({ data: actualizado });
 });
 
 router.use((error, req, res, next) => {

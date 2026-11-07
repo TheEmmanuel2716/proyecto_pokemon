@@ -88,4 +88,56 @@ describe('API de combates', () => {
     const { body } = await iniciar([4, 7]).expect(500);
     expect(body).toEqual({ mensaje: 'No se pudo consultar el catálogo. Intenta de nuevo.' });
   });
+
+  test('completa un duelo, registra el daño e impide actuar después de la victoria', async () => {
+    const azar = jest.spyOn(Math, 'random').mockReturnValue(0.5);
+    try {
+      const { headers } = await iniciar([4, 7]).expect(201);
+      const acciones = `${headers.location}/acciones`;
+
+      const primero = await api.post(acciones).send({ movimientoId: 'ascuas', turno: 1 }).expect(200);
+      expect(primero.body.data).toMatchObject({
+        turno: 2,
+        jugadorActivo: 2,
+        historial: [{ movimientoId: 'ascuas', danio: 12, psRestantes: 32, efectividad: 0.5 }]
+      });
+
+      const final = await api.post(acciones).send({ movimientoId: 'pistola-agua', turno: 2 }).expect(200);
+      expect(final.body.data).toMatchObject({
+        estado: 'finalizado', ganador: 2, jugadorActivo: null, turno: 3,
+        participantes: [{ psActuales: 0 }, { psActuales: 32 }]
+      });
+      expect(final.body.data.historial).toHaveLength(2);
+      expect(final.body.data.historial[1]).toMatchObject({ resultado: 'acierto', danio: 39, efectividad: 2 });
+
+      await api.post(acciones).send({ movimientoId: 'placaje', turno: 3 }).expect(409);
+      const consulta = await api.get(headers.location).expect(200);
+      expect(consulta.body).toEqual(final.body);
+    } finally {
+      azar.mockRestore();
+    }
+  });
+
+  test('rechaza movimientos fuera del turno, turnos incorrectos y daño del cliente', async () => {
+    const { headers, body } = await iniciar([4, 7]).expect(201);
+    const acciones = `${headers.location}/acciones`;
+    await api.post(acciones).send({ movimientoId: 'terremoto', turno: 1 }).expect(422);
+    await api.post(acciones).send({ movimientoId: 'ascuas', turno: 2 }).expect(409);
+    await api.post(acciones).send({ movimientoId: 'ascuas', turno: '1' }).expect(400);
+    await api.post(acciones).send({ movimientoId: 'ascuas', turno: 1, danio: 999 }).expect(400);
+    await api.post('/api/combates/desconocido/acciones').send({ movimientoId: 'ascuas', turno: 1 }).expect(404);
+    const consulta = await api.get(headers.location).expect(200);
+    expect(consulta.body).toEqual(body);
+  });
+
+  test('solo procesa una vez dos envíos concurrentes del mismo turno', async () => {
+    const { headers } = await iniciar([4, 7]).expect(201);
+    const acciones = `${headers.location}/acciones`;
+    const enviar = () => api.post(acciones).send({ movimientoId: 'ascuas', turno: 1 });
+    const respuestas = await Promise.all([enviar(), enviar()]);
+    expect(respuestas.map(({ status }) => status).sort()).toEqual([200, 409]);
+    const consulta = await api.get(headers.location).expect(200);
+    expect(consulta.body.data).toMatchObject({ turno: 2, jugadorActivo: 2 });
+    expect(consulta.body.data.historial).toHaveLength(1);
+  });
 });
