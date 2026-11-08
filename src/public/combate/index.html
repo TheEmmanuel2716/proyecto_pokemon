@@ -24,14 +24,29 @@
       </section>
 
       <form id="seleccion" class="panel seleccion">
-        <label><span class="etiqueta lado-1">01 / Jugador 1</span>
+        <label><span class="etiqueta lado-1" id="etiqueta-jugador-1">01 / Jugador 1</span>
           <select id="pokemon-1" required disabled><option value="">Selecciona un Pokémon</option></select>
         </label>
-        <label><span class="etiqueta lado-2">02 / Jugador 2</span>
+        <label><span class="etiqueta lado-2" id="etiqueta-jugador-2">02 / Jugador 2</span>
           <select id="pokemon-2" required disabled><option value="">Selecciona un Pokémon</option></select>
         </label>
         <button id="iniciar" class="principal" type="submit" disabled>Iniciar duelo</button>
+        <div id="opciones-duelo" class="opciones-duelo" hidden>
+          <button id="repetir-duelo" class="principal" type="button">Repetir duelo</button>
+          <button id="nuevo-duelo" type="button">Nuevo duelo</button>
+        </div>
       </form>
+      <details class="nombres-jugadores">
+        <summary>Editar nombres de jugadores</summary>
+        <div class="panel campos-nombres">
+          <label>Nombre del jugador 1
+            <input id="nombre-jugador-1" type="text" maxlength="28" placeholder="Jugador 1" dir="auto">
+          </label>
+          <label>Nombre del jugador 2
+            <input id="nombre-jugador-2" type="text" maxlength="28" placeholder="Jugador 2" dir="auto">
+          </label>
+        </div>
+      </details>
 
       <p id="carga" class="carga" role="status">Cargando catálogo…</p>
       <div id="aviso" class="aviso" hidden>
@@ -47,6 +62,12 @@
         <div class="arena">
           <div id="equipo" class="equipo"></div>
           <div class="versus" aria-hidden="true">VS</div>
+          <div id="efectos-arena" class="efectos-arena" aria-hidden="true"></div>
+          <div id="resultado-duelo" class="resultado-duelo" hidden>
+            <span class="etiqueta">Duelo finalizado</span>
+            <h2 id="nombre-ganador" dir="auto"></h2>
+            <p id="pokemon-ganador"></p>
+          </div>
         </div>
         <div class="resolucion">
           <section class="panel subpanel" aria-labelledby="titulo-movimientos">
@@ -71,8 +92,11 @@
           <div class="tipos"></div>
         </div>
         <div class="arte">
-          <img width="176" height="176" alt="" hidden>
-          <span class="sin-imagen">Sin imagen</span>
+          <div class="figura">
+            <img width="176" height="176" alt="" hidden>
+            <span class="sin-imagen">Sin imagen</span>
+          </div>
+          <span class="debilitado" hidden>Fuera de combate</span>
         </div>
         <div class="salud">
           <div><span class="etiqueta">PS</span> <strong></strong></div>

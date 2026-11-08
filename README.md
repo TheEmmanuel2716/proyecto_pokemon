@@ -197,7 +197,7 @@ pnpm install --frozen-lockfile
 pnpm start
 ```
 
-Abre [la arena de combate](http://localhost:3000/combate/). Elige a Charmander y Squirtle y presiona **Iniciar duelo**. Usa **Ascuas** en el turno de Charmander y **Pistola Agua** en el de Squirtle. La arena muestra los PS tras cada jugada, la efectividad del ataque y el ganador. Selecciona **Nuevo duelo** para volver a jugar.
+Abre [la arena de combate](http://localhost:3000/combate/). Elige a Charmander y Squirtle y presiona **Iniciar duelo**. Usa **Ascuas** en el turno de Charmander y **Pistola Agua** en el de Squirtle. La arena muestra los PS tras cada jugada, la efectividad del ataque y el ganador. Selecciona **Repetir duelo** para volver a jugar con los mismos Pokémon desde el primer turno, o **Nuevo duelo** para limpiar la selección y elegir otros.
 
 ### Arquitectura
 

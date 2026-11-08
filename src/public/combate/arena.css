@@ -16,7 +16,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; }
-button, select { font: inherit; }
+button, select, input { font: inherit; }
 button { cursor: pointer; }
 button:disabled, select:disabled { cursor: default; opacity: .55; }
 :focus-visible { outline: 3px solid var(--azul); outline-offset: 4px; }
@@ -57,6 +57,8 @@ main { padding-block: 32px 40px; }
 .seleccion { display: grid; grid-template-columns: 1fr 1fr auto; gap: 14px; padding: 14px; align-items: end; }
 .seleccion label { min-width: 0; }
 .seleccion label > span { display: block; margin-bottom: 7px; }
+.opciones-duelo { display: flex; gap: 8px; }
+.opciones-duelo button { flex: 1; }
 .lado-1 { color: var(--coral); }
 .lado-2 { color: var(--azul); }
 select, button { color: var(--texto); border: 1px solid var(--borde); border-radius: 9px; background: #13182a; }
@@ -65,6 +67,21 @@ button { min-height: 44px; padding: 8px 15px; font-weight: 750; }
 button:hover:not(:disabled) { border-color: var(--azul); }
 .principal { background: var(--coral); color: #191521; border-color: transparent; min-width: 136px; }
 .principal:hover:not(:disabled) { background: #ffada7; border-color: transparent; }
+.nombres-jugadores { margin-top: 8px; }
+.nombres-jugadores summary { width: fit-content; cursor: pointer; padding: 4px 0; color: var(--secundario); font-size: .875rem; }
+.campos-nombres { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 10px 14px; margin-top: 4px; }
+.campos-nombres label { min-width: 0; color: var(--secundario); font-size: .875rem; }
+.campos-nombres input {
+  width: 100%;
+  min-height: 38px;
+  margin-top: 4px;
+  padding: 7px 9px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  color: var(--texto);
+  background: #13182a;
+}
+.seleccion label > span, .tarjeta .jugador, .marcador strong { overflow-wrap: anywhere; }
 .carga { margin: 14px 0 0; }
 .aviso { display: flex; gap: 12px; align-items: center; margin-top: 14px; padding: 10px 14px; border: 1px solid var(--coral); border-radius: 9px; }
 .aviso p { margin: 0; color: #ffd7d4; }
@@ -72,38 +89,87 @@ button:hover:not(:disabled) { border-color: var(--azul); }
 .marcador { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 20px 0 10px; }
 .marcador .etiqueta { color: var(--secundario); }
 .marcador strong { color: var(--texto); }
-.arena { position: relative; }
-.equipo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.arena {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #485778;
+  border-radius: 16px;
+  background:
+    radial-gradient(ellipse at 12% 52%, #a7556b66, transparent 58%),
+    radial-gradient(ellipse at 87% 52%, #2888a66b, transparent 58%),
+    linear-gradient(#151b32 0%, #242e4a 52%, #253952 52.5%, #151b30 100%);
+}
+.arena::before {
+  content: "";
+  position: absolute;
+  inset: 52% -30% -30%;
+  background:
+    repeating-linear-gradient(0deg, #8eb2d331 0 1px, transparent 1px 29px),
+    repeating-linear-gradient(90deg, #8eb2d329 0 1px, transparent 1px 74px);
+  transform: perspective(220px) rotateX(38deg);
+  transform-origin: top;
+}
+.equipo {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 8vw, 108px);
+  padding: clamp(10px, 2vw, 22px);
+}
 .tarjeta {
   --acento: var(--coral);
-  --luz: #35273a;
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 10px 16px;
-  padding: 16px;
-  border: 1px solid var(--borde);
-  border-radius: 16px;
-  background: radial-gradient(ellipse at 80% 15%, var(--luz), var(--panel) 66%);
+  grid-template-rows: auto 1fr auto;
+  min-width: 0;
+  gap: 8px;
 }
-.tarjeta:nth-child(2) { --acento: var(--azul); --luz: #253a50; }
-.tarjeta.activa { border-color: var(--acento); }
+.tarjeta:nth-child(2) { --acento: var(--azul); }
+.datos, .salud {
+  padding: 8px clamp(8px, 2vw, 14px);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #151b2ce8;
+}
+.tarjeta.activa .datos { border-color: var(--acento); }
 .tarjeta .jugador { color: var(--acento); }
-.nombre { margin: 4px 0 8px; font-size: clamp(1.35rem, 3.5vw, 2.2rem); letter-spacing: -.045em; overflow-wrap: anywhere; }
+.nombre { margin: 2px 0 5px; font-size: clamp(1.15rem, 3vw, 1.8rem); letter-spacing: -.045em; overflow-wrap: anywhere; }
 .tipos { display: flex; flex-wrap: wrap; gap: 5px; }
 .tipo { border: 1px solid var(--borde); border-radius: 99px; padding: 2px 8px; font-size: .75rem; color: var(--secundario); }
-.arte { display: grid; place-items: center; width: clamp(90px, 15vw, 176px); aspect-ratio: 1; }
-.arte img, .sin-imagen { grid-area: 1 / 1; }
-.arte img { width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 10px 12px #0c1120aa); }
-.sin-imagen { color: var(--secundario); font-size: .82rem; text-align: center; }
-.salud { grid-column: 1 / -1; }
+.arte {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  width: min(100%, clamp(108px, 17vw, 174px));
+  aspect-ratio: 1;
+}
+.arte::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: auto 1% 3%;
+  height: 22%;
+  border: 1px solid var(--acento);
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #111827ba 40%, transparent 74%);
+  opacity: .7;
+}
+.figura { display: grid; place-items: center; width: 100%; aspect-ratio: 1; }
+.figura img, .sin-imagen, .debilitado { grid-area: 1 / 1; }
+.figura img { width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 8px 9px #0c1120cc); }
+.sin-imagen, .debilitado { color: var(--secundario); font-size: .82rem; text-align: center; }
+.debilitado { padding: 6px 8px; background: #151b2c; border: 1px solid var(--borde); border-radius: 8px; }
 .salud div { display: flex; justify-content: space-between; gap: 10px; }
 .salud strong { font-size: .85rem; font-variant-numeric: tabular-nums; }
 progress { width: 100%; height: 9px; accent-color: var(--verde); display: block; margin-top: 5px; }
 .versus {
   position: absolute;
+  z-index: 2;
   left: 50%;
-  top: 50%;
+  top: 60%;
   translate: -50% -50%;
   padding: 6px;
   border: 1px solid var(--borde);
@@ -111,6 +177,90 @@ progress { width: 100%; height: 9px; accent-color: var(--verde); display: block;
   background: var(--fondo);
   color: var(--secundario);
   font: 800 .7rem ui-monospace, Consolas, monospace;
+}
+.resultado-duelo {
+  --color-ganador: var(--coral);
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: min(82%, 380px);
+  padding: 14px 18px;
+  border: 1px solid var(--color-ganador);
+  border-radius: 14px;
+  background: #12192af5;
+  box-shadow: 0 10px 32px #080c17b8;
+  text-align: center;
+  pointer-events: none;
+}
+.resultado-duelo[data-jugador="2"] { --color-ganador: var(--azul); }
+.resultado-duelo .etiqueta { color: var(--color-ganador); }
+.resultado-duelo h2 { margin: 4px 0; font-size: clamp(1.3rem, 4vw, 2.15rem); line-height: 1.1; overflow-wrap: anywhere; }
+.resultado-duelo p { margin: 6px 0 0; font-size: .9rem; overflow-wrap: anywhere; }
+.efectos-arena {
+  --energia: #eee3ff;
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+}
+.efectos-arena[data-tipo="Fire"] { --energia: #ff8658; }
+.efectos-arena[data-tipo="Water"] { --energia: #71d9ff; }
+.efectos-arena[data-tipo="Electric"] { --energia: #ffe779; }
+.efectos-arena[data-tipo="Grass"] { --energia: #99ed83; }
+.efectos-arena[data-tipo="Ice"] { --energia: #b5f5f1; }
+.efectos-arena[data-tipo="Psychic"],
+.efectos-arena[data-tipo="Ghost"] { --energia: #dd96ff; }
+.efectos-arena[data-tipo="Ground"],
+.efectos-arena[data-tipo="Rock"] { --energia: #f6be86; }
+.proyectil, .onda-impacto, .rotulo-impacto { position: absolute; }
+.proyectil {
+  width: clamp(20px, 4vw, 42px);
+  height: clamp(14px, 2.5vw, 26px);
+}
+.proyectil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 66% 42%, #fff 4%, var(--energia) 40%, transparent 75%);
+  filter: drop-shadow(0 0 9px var(--energia));
+}
+.proyectil.fisico {
+  width: clamp(26px, 5vw, 58px);
+  height: 12px;
+}
+.proyectil.fisico::before {
+  border-radius: 0 80% 30% 100%;
+  background: linear-gradient(90deg, transparent, var(--energia) 60%, #fff);
+  rotate: -24deg;
+}
+.proyectil.hacia-izquierda::before { scale: -1 1; }
+.efectos-arena[data-tipo="Fire"] .proyectil::before { border-radius: 8% 68% 66% 8%; }
+.efectos-arena[data-tipo="Water"] .proyectil::before { border: 1px solid #b5f1ff; }
+.efectos-arena[data-tipo="Electric"] .proyectil::before {
+  clip-path: polygon(0 45%, 43% 36%, 35% 0, 100% 50%, 57% 61%, 67% 100%);
+  background: var(--energia);
+}
+.onda-impacto {
+  width: 44px;
+  aspect-ratio: 1;
+  opacity: 0;
+  border: 3px solid var(--energia);
+  border-radius: 50%;
+  box-shadow: 0 0 18px var(--energia), inset 0 0 11px var(--energia);
+}
+.onda-impacto[data-resultado="inmune"] { --energia: #aedffb; border-style: dashed; }
+.rotulo-impacto {
+  padding: 4px 9px;
+  opacity: 0;
+  border-radius: 8px;
+  background: #111827;
+  border: 1px solid var(--energia);
+  color: var(--texto);
+  font: 800 clamp(.72rem, 2vw, .96rem)/1.25 system-ui, sans-serif;
+  white-space: nowrap;
 }
 
 .resolucion { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
@@ -128,9 +278,8 @@ progress { width: 100%; height: 9px; accent-color: var(--verde); display: block;
 @media (max-width: 700px) {
   main { padding-top: 24px; }
   .seleccion { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .seleccion button { grid-column: 1 / -1; }
-  .tarjeta { grid-template-columns: 1fr; gap: 6px; padding: 12px; }
-  .arte { justify-self: center; }
+  .seleccion > button, .opciones-duelo { grid-column: 1 / -1; }
+  .tarjeta { gap: 6px; }
   .resolucion { grid-template-columns: 1fr; }
 }
 
@@ -138,5 +287,4 @@ progress { width: 100%; height: 9px; accent-color: var(--verde); display: block;
   .contenedor { width: calc(100% - 26px); }
   .seleccion { grid-template-columns: 1fr; }
   .etiqueta { letter-spacing: .06em; }
-  .versus { top: 60%; }
 }
