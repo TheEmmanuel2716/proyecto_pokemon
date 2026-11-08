@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101322">
+    <title>Arena de combate · Pokémon</title>
+    <link rel="stylesheet" href="/combate/arena.css">
+    <script src="/combate/arena.js" defer></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor barra">
+        <div class="marca"><span class="pokebola" aria-hidden="true"></span> Liga Kanto</div>
+        <a class="enlace-api" href="/">Ver API <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <section class="introduccion" aria-labelledby="titulo">
+        <p class="etiqueta"><span class="punto"></span> Generación I <span aria-hidden="true">/</span> Duelo local</p>
+        <h1 id="titulo">Arena de combate<span>.</span></h1>
+        <p>Elijan sus Pokémon y jueguen por turnos en este dispositivo.</p>
+      </section>
+
+      <form id="seleccion" class="panel seleccion">
+        <label><span class="etiqueta lado-1" id="etiqueta-jugador-1">01 / Jugador 1</span>
+          <select id="pokemon-1" required disabled><option value="">Selecciona un Pokémon</option></select>
+        </label>
+        <label><span class="etiqueta lado-2" id="etiqueta-jugador-2">02 / Jugador 2</span>
+          <select id="pokemon-2" required disabled><option value="">Selecciona un Pokémon</option></select>
+        </label>
+        <button id="iniciar" class="principal" type="submit" disabled>Iniciar duelo</button>
+        <div id="opciones-duelo" class="opciones-duelo" hidden>
+          <button id="repetir-duelo" class="principal" type="button">Repetir duelo</button>
+          <button id="nuevo-duelo" type="button">Nuevo duelo</button>
+        </div>
+      </form>
+      <details class="nombres-jugadores">
+        <summary>Editar nombres de jugadores</summary>
+        <div class="panel campos-nombres">
+          <label>Nombre del jugador 1
+            <input id="nombre-jugador-1" type="text" maxlength="28" placeholder="Jugador 1" dir="auto">
+          </label>
+          <label>Nombre del jugador 2
+            <input id="nombre-jugador-2" type="text" maxlength="28" placeholder="Jugador 2" dir="auto">
+          </label>
+        </div>
+      </details>
+
+      <p id="carga" class="carga" role="status">Cargando catálogo…</p>
+      <div id="aviso" class="aviso" hidden>
+        <p id="error" role="alert"></p>
+        <button id="reintentar" type="button" hidden>Reintentar</button>
+      </div>
+
+      <section id="combate" aria-label="Duelo" hidden>
+        <div class="marcador" role="status">
+          <span class="etiqueta" id="ronda"></span>
+          <strong id="estado"></strong>
+        </div>
+        <div class="arena">
+          <div id="equipo" class="equipo"></div>
+          <div class="versus" aria-hidden="true">VS</div>
+          <div id="efectos-arena" class="efectos-arena" aria-hidden="true"></div>
+          <div id="resultado-duelo" class="resultado-duelo" hidden>
+            <span class="etiqueta">Duelo finalizado</span>
+            <h2 id="nombre-ganador" dir="auto"></h2>
+            <p id="pokemon-ganador"></p>
+          </div>
+        </div>
+        <div class="resolucion">
+          <section class="panel subpanel" aria-labelledby="titulo-movimientos">
+            <h2 id="titulo-movimientos">Movimientos</h2>
+            <p id="indicacion-movimientos"></p>
+            <div id="movimientos" class="movimientos"></div>
+          </section>
+          <section class="panel subpanel" aria-labelledby="titulo-historial">
+            <h2 id="titulo-historial">Registro del duelo</h2>
+            <p id="sin-historial">Las acciones aparecerán aquí.</p>
+            <ol id="historial" class="historial"></ol>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <template id="tarjeta">
+      <article class="tarjeta">
+        <div class="datos">
+          <span class="etiqueta jugador"></span>
+          <h2 class="nombre"></h2>
+          <div class="tipos"></div>
+        </div>
+        <div class="arte">
+          <div class="figura">
+            <img width="176" height="176" alt="" hidden>
+            <span class="sin-imagen">Sin imagen</span>
+          </div>
+          <span class="debilitado" hidden>Fuera de combate</span>
+        </div>
+        <div class="salud">
+          <div><span class="etiqueta">PS</span> <strong></strong></div>
+          <progress></progress>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>

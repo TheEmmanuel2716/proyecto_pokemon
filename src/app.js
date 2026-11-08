@@ -1,13 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
+const path = require('node:path');
 
 const pokemonRoutes = require('./routes/pokemonRoutes');
+const combateRoutes = require('./routes/combateRoutes');
 
 const app = express();
 
 app.use(cors());
 app.use(morgan('dev'));
+app.use('/api/combates', combateRoutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -29,6 +32,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/pokemons', pokemonRoutes);
+app.use('/combate', express.static(path.join(__dirname, 'public', 'combate')));
 
 // 404 - ruta no encontrada
 app.use((req, res) => {

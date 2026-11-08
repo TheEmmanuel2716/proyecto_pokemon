@@ -1,8 +1,17 @@
 const request = require('supertest');
-const app = require('../src/app');
+const { crearAppTemporal } = require('./fixtures/appTemporal');
 
 describe('API Pokemon - CRUD basico', () => {
+  let entorno;
+  let app;
   let idCreado;
+
+  beforeAll(() => {
+    entorno = crearAppTemporal();
+    app = entorno.app;
+  });
+
+  afterAll(() => entorno?.cerrar());
 
   test('GET /api/pokemons -> debe listar los 151 pokemon iniciales o mas', async () => {
     const res = await request(app).get('/api/pokemons');
